@@ -4,18 +4,25 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
-        BinarySearchTree<int> bst = new BinarySearchTree<int>();
+        BinaryTree tree = new BinaryTree();
 
-        bst.Add(56);
-        bst.Add(30);
-        bst.Add(70);
-        bst.Add(96);
-        bst.Add(37);
-        bst.Add(88);
+        tree.Add(56);
+        tree.Add(30);
+        tree.Add(40);
+        tree.Add(22);
+        tree.Add(11);
+        tree.Add(13);
+        tree.Add(3);
+        tree.Add(70);
+        tree.Add(60);
+        tree.Add(65);
+        tree.Add(63);
+        tree.Add(67);
+        tree.Add(95);
 
-        // Perform any additional operations on the BST as needed
 
-        Console.WriteLine("Binary Search Tree created successfully!");
+        int size = tree.Size();
+        Console.WriteLine("Size of the binary tree: " + size);
+
     }
 }
