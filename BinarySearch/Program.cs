@@ -24,5 +24,21 @@ internal class Program
         int size = tree.Size();
         Console.WriteLine("Size of the binary tree: " + size);
 
+        BinaryTree tree1 = new BinaryTree();
+
+        // Add nodes to the tree...
+
+        bool found = tree.Search(63);
+
+        if (found)
+        {
+            Console.WriteLine("Number is found in the binary tree.");
+        }
+        else
+        {
+            Console.WriteLine("Number is not found in the binary tree.");
+        }
+
+
     }
 }

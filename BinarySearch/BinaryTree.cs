@@ -72,6 +72,30 @@ namespace BinarySearch
                 return 1 + GetSize(node.left) + GetSize(node.right);
             }
         }
+        public bool Search(int value)
+        {
+            return SearchNode(root, value);
+        }
+
+        private bool SearchNode(Node node, int value)
+        {
+            if (node == null)
+            {
+                return false;
+            }
+            else if (node.data == value)
+            {
+                return true;
+            }
+            else if (value < node.data)
+            {
+                return SearchNode(node.left, value);
+            }
+            else
+            {
+                return SearchNode(node.right, value);
+            }
+        }
     }
 
 }
